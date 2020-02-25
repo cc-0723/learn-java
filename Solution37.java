@@ -1,26 +1,14 @@
-package 寒假作业;
-
-class A {
-    public A() {
-        System.out.println("class A");
-    }
-    { System.out.println("I'm A class"); }
-    static { System.out.println("class A static"); }
-}
-class B extends A {
-    public B() {
-        System.out.println("class B");
-    }
-    { System.out.println("I'm B class"); }
-    static { System.out.println("class B static"); }
-
-    public static void main(String[] args) {
-        new B();
+class Solution {
+	//子集
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Interger>> res = new ArrayList<List<Interger>>();
+		for(int i = 0; i < (1 << nums.length); i++) {
+			List<Integer> sub = new ArrayList<Integer>();
+			for(int j = 0; j < nums.length; j++) {
+				if (((i >> j) & 1) == 1) sub.add(nums[j]);
+            res.add(sub);
+			}
+		}
+		return res;
     }
 }
-//class A static
-//class B static
-//I'm A class
-//class A
-//I'm B class
-//class B
