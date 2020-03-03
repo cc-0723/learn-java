@@ -1,6 +1,6 @@
 package 寒假练习;
 
-public class Solution_3 {
+public class Solution_4{
     class Value{
         public int i=15;
     }
