@@ -1,0 +1,48 @@
+header {
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    top: 50px;
+    z-index: 10;
+    background-image: url("/img/banner.png");
+    background-repeat: round;
+}
+
+header nav {
+    padding-top: 9px;
+    position: relative;
+    top: -50px;
+    height: 50px;
+    background-color: #7ecdf6;
+    line-height: 50px;
+}
+
+header a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+nav a#brand {
+    margin-left: 120px;
+    font-size: 200%;
+}
+
+nav div.right-links {
+    float: right;
+    margin-right: 120px;
+}
+
+nav div.right-links a {
+    margin-left: 13px;
+}
+
+nav a#survey-editor {
+    display: inline-block;
+    background-color: #00bfff;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: #00AFCF 0 3px 0;
+}
